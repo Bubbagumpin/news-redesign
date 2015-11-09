@@ -44,16 +44,83 @@ h2{
 	width: 90px;
 }
 .container {
-    border: 1px solid #DDDDDD;
-    width: 200px;
+    width: 450px;
     height: 200px;
 }
 .tag {
     float: left;
     position: relative;
-    left: 5px;
-    top: 10px;
-    background-color: green;
+    left: 100px;
+    top: 430px;
+    background-color: white;
+    opacity: .75;
     z-index: 1000;
     margin-bottom: -20px;
+    font-size: 30px;
+    padding: 10px;
+}
+.media{
+    width: 100%; 
+    height: 100px; 
+    float: left;
+    display: inline-block;
+    overflow-x: auto;
+    -ms-overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.image{
+    float: left;
+    height: 100px;
+    border: 1px solid white;
+    width: 200px;
+}
+.h3{
+	margin-bottom: 20px;
+	border-bottom: 1px solid grey;
+	text-align: center;
+	font-size: 50px;
+}
+.h4{
+	margin-bottom: 20px;
+	border-bottom: 1px solid grey;
+	text-align: center;
+}
+.original img{
+	height: 150px;
+	width: 400px;
+	margin-top: 20px;
+}
+.hot img{
+	height: 150px;
+	width: 400px;
+	margin-top: 20px;
+}
+
+@media (max-width: 600px){
+	.original{
+		display: none;	}
+	h1{font-size: 30px;}
+	.collapse{
+		padding: 1px;
+		margin: 1px;
+	}
+	.nav.cute{display: none;}
+	.nav.win{display: none;}
+}
+@media (max-width: 700px){
+	.nav.fail{display: none;}	
+}
+@media (max-width: 900px){
+	.nav.login{display: none;}
+	.nav.signup{display: none;}
+}
+@media (max-width: 600px){
+	.left-sidebar{display: inline-block;}
+	.container{display: none;}
+}
+.container.left-sidebar{
+	margin-top: -280px;
 }
